@@ -29,7 +29,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   min-height: 100vh;
   justify-content: center;
-  max-width: 920px;
+  max-width: 800px;
 }
 
 .content-me {
@@ -64,7 +64,7 @@ body::-webkit-scrollbar-thumb {
 .content-about-text {
   display: flex;
   max-width: var(--max-width-right-block);
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 300;
   line-height: 1.6;
 }
@@ -93,9 +93,9 @@ body::-webkit-scrollbar-thumb {
 
 .left {
   float: left;
-  width: 200px;
+  width: 240px;
   text-align: right;
-  margin-right: 40px;
+  margin-right: 35px;
 }
 
 .content-right-header {
@@ -150,4 +150,38 @@ h3 {
 h4 {
   font-weight: 500;
   margin: 15px 0 0 0;
+}
+
+@media (min-width: 320px) and (max-width: 680px) {
+  .left {
+    float: none;
+    width: auto;
+    text-align: left;
+    margin-right: 0;
+  }
+  .content-about-text {
+    margin-top: 20px;
+  }
+  .content-two-side {
+    margin-bottom: 5px;
+  }
+  .content-me-avatar img {
+    margin-right: 15px;
+  }
+  .content-me-block-position {
+    font-size: 30px;
+  }
+  .content-me-block-name {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .content-me {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .content-me-block {
+    margin: 15px 0;
+  }
 }
