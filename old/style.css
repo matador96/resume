@@ -1,0 +1,187 @@
+:root {
+  --max-width-right-block: 500px;
+}
+
+body {
+  background: linear-gradient(90deg, pink, powderblue);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  color: rgba(0, 0, 0, 0.753);
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 1);
+  background-color: powderblue;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.18);
+}
+
+.content {
+  display: flex;
+  margin: 5vh auto;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  max-width: 800px;
+}
+
+.content-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.content-me-block-name {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.content-me-block-position {
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.content-me-avatar img {
+  height: 100px;
+  width: 100px;
+  display: block;
+  border-radius: 6px;
+  margin-left: auto;
+}
+
+.content-about {
+  margin-bottom: 25px;
+}
+
+.content-about-text {
+  display: flex;
+  max-width: var(--max-width-right-block);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.content-about-contact {
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.content-two-side {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.content-two-side-left {
+  font-weight: 500;
+  font-size: 14px;
+}
+.content-two-side-right {
+  font-size: 15px;
+  display: flex;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.left {
+  float: left;
+  width: 240px;
+  text-align: right;
+  margin-right: 35px;
+}
+
+.content-right-header {
+  display: flex;
+}
+
+.animation-opacity {
+  animation-duration: 1.5s;
+  animation-name: animation-opacity;
+  animation-timing-function: ease;
+}
+
+@keyframes animation-opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animation-right-to-left {
+  animation-duration: 0.8s;
+  animation-name: animation-right-to-left;
+  animation-timing-function: ease;
+}
+
+@keyframes animation-right-to-left {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+  font-weight: 500;
+  margin: 10px 0 15px 0;
+}
+
+h4 {
+  font-weight: 500;
+  margin: 15px 0 0 0;
+}
+
+@media (min-width: 320px) and (max-width: 680px) {
+  .left {
+    float: none;
+    width: auto;
+    text-align: left;
+    margin-right: 0;
+  }
+  .content-about-text {
+    margin-top: 20px;
+  }
+  .content-two-side {
+    margin-bottom: 5px;
+  }
+  .content-me-avatar img {
+    margin-right: 15px;
+  }
+  .content-me-block-position {
+    font-size: 30px;
+  }
+  .content-me-block-name {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .content-me {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .content-me-block {
+    margin: 15px 0;
+  }
+}
