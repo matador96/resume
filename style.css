@@ -11,20 +11,62 @@ body {
   min-height: 100vh;
   color: rgba(0, 0, 0, 0.753);
   font-size: 14px;
-  padding: 30px 40px;
+  padding: 25px;
 }
 
 .flex-row {
   display: flex;
-  gap: 15px;
+  gap: 12px;
   margin: 3px 0 5px 0;
   color: grey;
+}
+
+.flex-row.education {
+  gap: 4px;
+}
+
+.fa-star {
+  color: rgb(173, 173, 173);
+}
+
+.checked {
+  color: #000;
 }
 
 .flex-row-title {
   display: flex;
   gap: 6px;
   align-items: center;
+}
+
+.two-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.two-blocks .left-block {
+  width: 60%;
+}
+.two-blocks .right-block {
+  width: 36%;
+}
+
+@media screen and (max-width: 768px) {
+  .two-blocks .left-block {
+    width: 100%;
+  }
+  .two-blocks .right-block {
+    width: 100%;
+  }
+}
+
+.language-span {
+  width: 160px;
+  display: inline-block;
+  margin: 3px 0;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .name {
@@ -66,10 +108,9 @@ body {
 
 .education-from {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   opacity: 0.6;
-  position: relative;
-  margin: 6px 0;
+  margin: 4px 0;
 }
 
 .job-date {
@@ -181,7 +222,7 @@ svg path {
   display: flex;
   gap: 11px;
   flex-wrap: wrap;
-  margin: 15px 0 12px 0;
+  margin: 15px 0 14px 0;
 }
 
 .socials svg {
